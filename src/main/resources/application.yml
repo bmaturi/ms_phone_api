@@ -1,0 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: shutdown,health,info,env,metrics
+
+server:
+  port: 8090
+  servlet:
+    context-path: /ms_phone_api
+
+spring:
+  application:
+    name: ms_phone_api
