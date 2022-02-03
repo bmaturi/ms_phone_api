@@ -12,8 +12,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class PhoneApiExceptionHandler extends ResponseEntityExceptionHandler {
 
 
-  @ExceptionHandler(CustomerNotFoundException.class)
-  public ResponseEntity<ApiError> handleCustomerNotFound(CustomerNotFoundException cnfe) {
+  @ExceptionHandler(EntityNotFoundException.class)
+  public ResponseEntity<ApiError> handleCustomerNotFound(EntityNotFoundException cnfe) {
     return new ResponseEntity<ApiError>(ApiError.builder().message(cnfe.getMessage())
     .httpStatus(HttpStatus.NOT_FOUND).build(), HttpStatus.NOT_FOUND);
   }
