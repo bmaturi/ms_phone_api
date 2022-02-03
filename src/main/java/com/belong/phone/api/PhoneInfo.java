@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PhoneInfo {
-  
+
   private String phoneNumber;
-  private boolean status;
+  private boolean active;
 }

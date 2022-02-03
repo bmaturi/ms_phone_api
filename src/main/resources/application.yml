@@ -17,7 +17,6 @@ spring:
     name: ms_phone_api
 
 springdoc:
-  version: springdoc.version
   swagger-ui:
     path: /swagger-ui
 
