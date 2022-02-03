@@ -1,4 +1,4 @@
-package unit.com.belong.phone;
+package unit.com.belong.phone.application;
 
 import com.belong.phone.api.ActivateRequest;
 import com.belong.phone.api.PhoneInfo;
