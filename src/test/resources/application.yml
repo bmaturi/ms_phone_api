@@ -1,0 +1,28 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,env,metrics
+  info:
+    env:
+      enabled: true
+
+server:
+  port: 8090
+  servlet:
+    context-path: /ms_phone_api
+
+spring:
+  application:
+    name: ms_phone_api
+
+springdoc:
+  version: 1.3.0
+  swagger-ui:
+    path: /swagger-ui
+
+info:
+  application:
+    name: ${spring.application.name}
+    description: Microservice exposing api's to manage Customer Phone Numbers.
+    version: '0.0.1'
